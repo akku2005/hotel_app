@@ -119,3 +119,30 @@
         }
     }
 }
+<<<<<<< HEAD
+=======
+@media (max-width: 726px) {
+    #two-rows3{
+        // // display: none;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr;
+        // grid-column: span 2;
+        // // grid-column-end: ;
+        display: flex;
+        flex-direction: row;
+
+    >img{
+            filter: drop-shadow(-10px -10px 10px rgb(146, 141, 141));
+            margin-left: 10%;
+            max-width: 70%;
+            height: 80%;
+            border-radius: 8px;
+        }
+        >#list-items1{
+            padding: 10px;
+            >h2{
+                width:85%;
+            }
+}
+}}
+>>>>>>> 791ccfd69aa3a729b6275e574c1a6b935c618c8e
