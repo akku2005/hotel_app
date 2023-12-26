@@ -1,0 +1,112 @@
+#gallery{
+    // background-color: aqua;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    >#heading{
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        padding-bottom: 30px;
+        >p{
+        margin-top: 5px;
+        }
+        >.button-like{
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 700;
+          padding: 8px 20px;
+          background-color: #e7f1fd;
+          color: #106eea;
+          display: inline-block;
+          text-transform: uppercase;
+          border-radius: 50px;
+      }
+      >p{
+        font-size: 17px;
+        color: gray;
+        font-weight: 600;
+      }
+      >h2{
+        padding: 20px;
+        font-size: 30px;
+        >span{
+          color: #106eea;
+      }
+    }
+    }
+    /* Gallery.css */
+.gally {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.next-btn,
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+>#list-ofImages{
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+}
+.custom-caption-class {
+  // Add styles for your custom caption class here
+  // For example:
+  font-size: 54px;
+  color: #555;
+  margin-top: 8px;
+}

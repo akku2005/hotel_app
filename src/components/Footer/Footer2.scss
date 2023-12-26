@@ -1,0 +1,24 @@
+#footer2{
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 203, 255);
+    >.first{
+        margin-top: 20px;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        >p{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 30px;
+            >span{
+                color:rgb(8, 90, 243) ;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,116 @@
+#contact{
+  // background-color: aqua;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  >#heading{
+      display: block;
+      box-sizing: border-box;
+      text-align: center;
+      padding-bottom: 30px;
+      >p{
+      margin-top: 5px;
+      }
+      >.button-like{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding: 8px 20px;
+        background-color: #e7f1fd;
+        color: #106eea;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+    >p{
+      font-size: 17px;
+      color: gray;
+      font-weight: 600;
+    }
+    >h2{
+      padding: 20px;
+      font-size: 40px;
+      >span{
+        color: #106eea;
+    }
+  }
+  }
+  >body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .card-container {
+      gap: 1%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      align-items: center;
+      width: 380px;
+      height: 250px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: #fff;
+      >.popup{
+        // font-size: 28px;
+        // transition:ease-in-out 0.3s;
+        >.paragraph{
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          margin-left: 7%;
+          margin-right: 7%;
+        }
+        >#icons{
+          font-size: 28px;
+          margin-top: 50px;
+          color: #106eea;
+          margin:  0 auto;
+          width: 60px;
+          height: 60px;
+          background-color: #e7f1fd;
+          border-radius: 50%;
+          border: 2px dotted #000;
+          border-color: #106eea;
+          display: flex;
+          align-items: center;
+          margin-top: 15%;
+          margin-bottom: 20px;
+          transition: ease-in-out 0.3s;
+          box-sizing: border-box;
+
+        }
+        >h2{
+          color: gray;
+          font-size: 30px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+
+        >p{
+          font-size: 20px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+        >.paragraph{
+          text-align: center;
+          margin: 10px;
+          color: gray;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+}

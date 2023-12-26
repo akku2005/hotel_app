@@ -1,0 +1,57 @@
+.grid-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Adjust the gap between items as needed */
+    width: auto; /* Set a max width for the container */
+    box-sizing: border-box;
+
+}
+
+.grid-item {
+    color: #000;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    margin: 10px;
+    // background-color: #3498db; /* Set your item background color */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Set your text color */
+    >h2,h1{
+        color: #000;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+    >p{
+        color: #000;
+        align-items: flex-start;
+        margin: 10px;
+        font-size: 16px;
+    }
+    >li{
+        color: #000;
+        font-family: sans-serif;
+        list-style-type: none;
+        text-decoration: none;
+        margin: 15px;
+        font-size: 18px;
+    }
+    >.socail-links{
+        position: static;
+        color: #000;
+        justify-content: center;
+        box-sizing: border-box;
+        gap: 20px;
+        font-size: 25px;
+        margin-top: 15%;
+        list-style-type: none;
+        display: flex;
+        >li:hover{
+            
+            width: 30px;
+            height: auto;
+            border-radius: 50%;
+            background-color: #56aee9;
+        }
+    }
+}

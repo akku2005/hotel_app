@@ -1,0 +1,130 @@
+.myContainer{
+    box-sizing: border-box;
+    cursor: auto;
+    display: block;
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    z-index: 10;
+    filter: blur(3px);
+    :root{
+        --swiper-navigation-size:44px
+    }
+}
+#tile{
+    margin-left: 10%;
+        position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      span{
+        color: rgb(16,110,234);
+      }
+      h5{
+        opacity: 80;
+        color: gray;
+      }
+    }
+    .d-flex>button{
+        border: none;
+        border: transparent;
+        width: 10rem;
+        background-color:rgb(16,110,234);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        &:hover{
+            background-color:rgb(54, 121, 209) ;
+        }
+        >a{
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            
+        }
+    }
+    #home-featured{
+        background-color: rgb(226, 237, 237);
+        box-sizing: border-box;
+       align-items: center;
+       overflow: hidden;
+       padding-bottom: 30px;
+       >.h3-heading{
+        margin-left: 10%;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 2;
+        display: block;
+        align-items: center;
+        padding-bottom: 30px;
+        >span{
+            color: rgb(25, 118, 231);
+        }
+       }
+       >.row mt-5{
+        margin-top: 3rem  !important;
+       }
+       >.row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+
+       }
+        >.row>ul{
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            letter-spacing: 0.5px;
+            font-size: 20px;
+            font: bold;
+            margin-left: 10%;
+        }
+        ul>li{
+            margin: 10px;
+        }
+    }
+    @media (max-width: 726px) {
+        .myContainer {
+            background-size: cover;
+            width: 100%;
+          height: 100vh; /* Adjust the height for smaller screens */
+        }
+      
+        #tile {
+            top: 50%;
+            left: 40%;
+        }
+      
+        .d-flex {
+          flex-direction: column;
+        }
+      
+        button {
+          margin: 5px 0;
+        }
+      
+        #home-featured {
+          padding: 10px;
+        }
+      
+        .h3-heading {
+          font-size: 1.5rem;
+        }
+        .row mt-5>ul{
+          position: relative;
+          >li{
+            align-items: center;
+            font-size: 18px;
+            font-family: sans-serif;
+          }
+        }
+      }

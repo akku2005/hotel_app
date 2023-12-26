@@ -1,0 +1,135 @@
+#room{
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    >#heading{
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        padding-bottom: 30px;
+        >p{
+        margin-top: 5px;
+        }
+        >.button-like{
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 700;
+          padding: 8px 20px;
+          background-color: #e7f1fd;
+          color: #106eea;
+          display: inline-block;
+          text-transform: uppercase;
+          border-radius: 50px;
+      }
+      >p{
+        font-size: 17px;
+        color: gray;
+        font-weight: 600;
+      }
+      >h2{
+        padding: 20px;
+        font-size: 60px;
+        >span{
+          color: #106eea;
+      }
+    }
+    }
+    >#flexBoxModel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+    >body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+  
+      .card-container {
+        gap: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 350px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        // box-shadow: 0 4px 8px rgba(195, 192, 192, 0.1);
+        // overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        >.popup{
+          // font-size: 28px;
+          transition:ease-in-out 0.3s;
+          >.paragraph{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-left: 7%;
+            margin-right: 7%;
+          }
+          >#icons{
+            font-size: 28px;
+            margin-top: 50px;
+            color: #106eea;
+            margin:  0 auto;
+            width: 80px;
+            height: 74px;
+            background-color: #e7f1fd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            margin-top: 15%;
+            margin-bottom: 20px;
+            transition: ease-in-out 0.3s;
+            box-sizing: border-box;
+
+          }
+          >h2{
+            font-size: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+
+          >p{
+            font-size: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+          >.paragraph{
+            text-align: center;
+            margin: 10px;
+            color: gray;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+        }
+      }
+  
+      .card:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+      }
+      .card:hover .popup {
+        box-sizing: border-box;
+        display: block;
+        >h2{
+          color: #106eea;
+        }
+      }
+}
