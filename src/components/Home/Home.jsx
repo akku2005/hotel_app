@@ -37,23 +37,23 @@ const Home = () => {
       <h3 className='h3-heading'>FEATURED <span> AMENITIES ON-SITE</span></h3>
       <div className='row mt-5'>
         <ul>
-          <li><i className="ri-restaurant-line"></i>Restaurant</li>
-          <li>Outdoor Pool</li>
-          <li>Meeting Space</li>
-          <li>Laundry</li>
-          <li>WhatsApp & Call Booking</li>
+          <li><i className="ri-restaurant-line"></i> Restaurant</li>
+          <li><i class="ri-check-double-line"></i> Outdoor Pool</li>
+          <li><i class="ri-slideshow-line"></i> Meeting Space</li>
+          <li><i class="ri-shirt-fill"></i> Laundry</li>
+          <li><i class="ri-phone-fill"></i> WhatsApp & Call Booking</li>
           </ul>
           <ul>
-            <li>spa</li>
-            <li>24 Hour Room Service</li>
-            <li>Convenience Store</li>
-            <li>Hair Salon</li>
+            <li><i class="ri-leaf-line"></i> spa</li>
+            <li><i class="ri-24-hours-line"></i> 24 Hour Room Service</li>
+            <li><i class="ri-store-3-fill"></i> Convenience Store</li>
+            <li><i class="ri-crosshair-fill"></i> Hair Salon</li>
           </ul>
           <ul>
-          <li>  Fitness Center</li>
-          <li>Daily HouseKeeping</li>
-          <li>Room Service</li>
-          <li>Meeting Space</li>
+          <li> <i class="ri-check-double-line"></i> Fitness Center</li>
+          <li><i class="ri-magic-line"></i> Daily HouseKeeping</li>
+          <li><i class="ri-check-double-line"></i> Room Service</li>
+          <li><i class="ri-slideshow-2-fill"></i> Meeting Space</li>
           </ul>
           </div>
       </div>
