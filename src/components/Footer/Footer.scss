@@ -55,3 +55,13 @@
         }
     }
 }
+@media (max-width: 726px) {
+    .grid-container{
+        line-height: 1;
+        grid-template-columns: 1fr; /* Single column for screens <= 726px */
+    }
+    .left-column,
+    .right-column {
+      padding:0px; /* Optional: Adjust padding for smaller screens */
+    }
+  }

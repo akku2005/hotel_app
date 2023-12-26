@@ -7,7 +7,7 @@ const Contact = () => {
       <div id='heading'>
       <p className='button-like'>Contact Us</p>
       <h2><span>Contact Us</span></h2>
-      <p>If you are facing some issue or you want to contact our support team you can reach out to us by any of these mediums.</p>
+      <p className='paragraph'>If you are facing some issue or you want to contact our support team you can reach out to us by any of these mediums.</p>
       </div>
       <div class="card-container">
     <div class="card">

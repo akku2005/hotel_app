@@ -93,11 +93,11 @@
         }
     }
     @media (max-width: 726px) {
-        .myContainer {
-            background-size: cover;
-            width: 100%;
-          height: 100vh; /* Adjust the height for smaller screens */
-        }
+      .myContainer {
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+    }
       
         #tile {
             top: 50%;

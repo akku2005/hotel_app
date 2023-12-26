@@ -1,24 +1,41 @@
-#footer2{
-    height: 80px;
+#footer2 {
+    height: auto;
     width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgb(176, 203, 255);
-    >.first{
+    // overflow-x: hidden; // Prevent horizontal scrolling
+
+    > .first {
         margin-top: 20px;
         font-size: 25px;
         justify-content: center;
         align-items: center;
         display: flex;
-        >p{
+
+        > p {
             justify-content: center;
             align-items: center;
             display: flex;
             margin: 30px;
-            >span{
-                color:rgb(8, 90, 243) ;
+
+            > span {
+                color: rgb(8, 90, 243);
             }
         }
-        
+    }
+
+    // Media query for screens with a width of 726px or less
+    @media (max-width: 726px) {
+        // > .first {
+        //     flex-direction: column; // Display child elements in a column
+        //     text-align: center; // Center-align text within the container
+        // }
+        // >p{
+        //     font-size: 10px;
+        // }
+        .first{
+            font-size: 10px;
+        }
     }
 }

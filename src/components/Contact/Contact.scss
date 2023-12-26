@@ -114,3 +114,30 @@
       }
     }
 }
+@media screen and (max-width:726px) {
+  #heading{
+    .paragraph{
+      font-size: 20px;
+    }
+  }
+  
+  .card-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    .card{
+      width: 80%;
+        height: 30%;
+      .popup{
+        >h2{
+          font-size: 20px;
+        }
+        >p{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

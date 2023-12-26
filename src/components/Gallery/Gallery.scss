@@ -110,3 +110,21 @@
   color: #555;
   margin-top: 8px;
 }
+@media only screen and (max-width: 726px) {
+  .popup{
+    
+  }
+  #gallery{
+        margin-top: 130%;
+      }
+}
+@media only screen and (max-width: 45){
+  #gallery{
+    margin-top: 10%;
+  }
+}
+// @media(min-width: 300px){
+//   #gallery{
+//     margin-top: 110%;
+//   }
+// }
