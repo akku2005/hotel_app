@@ -21,7 +21,7 @@ const Map = ({ latitude, longitude, uniqueProperty }) => {
     <>
     <div id='location'>
     <div class="left-column">
-    <h2>Location :-</h2>
+    <h2>Location</h2>
     <iframe
       title={`Google Map ${uniqueProperty}`}
       src={embedUrl}
