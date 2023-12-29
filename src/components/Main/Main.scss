@@ -2,7 +2,6 @@
 
 /* Header.css */
 .header {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -72,7 +71,7 @@
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 743px) {
   .nav-links {
     position: fixed;
     display: none;
@@ -80,7 +79,7 @@
     position: absolute;
     height: 200px;
     top: 70px;
-    right: 0; /* Adjusted to right */
+    left: 50px; /* Adjusted to right */
     border-radius: 30px;
     justify-content: center;
     align-items: center;

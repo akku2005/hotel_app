@@ -22,6 +22,7 @@ const Map = ({ latitude, longitude, uniqueProperty }) => {
     <div id='location'>
     <div class="left-column">
     <h2>Location</h2>
+    <div id='locationframe'>
     <iframe
       title={`Google Map ${uniqueProperty}`}
       src={embedUrl}
@@ -32,23 +33,18 @@ const Map = ({ latitude, longitude, uniqueProperty }) => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
+    </div>
   </div>
   <div class="right-column">
   <div id='fom'>
   <h1>Contact</h1>
       <form onSubmit={handleSubmit}>
-        <label>
           <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Your Name' required />
-        </label>
-        <label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Your Email' required />
-        </label>
-        <label>
+          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Your Email' required />    
           <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder='Subject' required />
-        </label>
-        <label>
+          <div id='text_area'>
           <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Message' required></textarea>
-        </label>
+          </div>
         <div id='btn'>
         <button type="submit">Send Message</button>
         </div>

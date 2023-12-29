@@ -135,6 +135,7 @@
 }
 @media screen and (max-width: 726px) {
   #room{
+    margin-top: 110%;
     width: 100%;
     height: 100vh;
     #heading{
@@ -143,6 +144,11 @@
         font-size: 27px;
       }
       >p{
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 15px;
       }
     }
@@ -151,7 +157,7 @@
       flex-wrap: wrap;
       .card{
         width: 70%;
-        height: 40%;
+        height: 42%;
         .popup{
           >h2{
             font-size: 25px;

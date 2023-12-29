@@ -1,6 +1,7 @@
 @import '../../app.scss';
 
-*{
+body,html{
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -47,15 +48,11 @@ header{
         color:white;
     }
     @media (max-width: 768px) {
-        #links {
+        #links { 
           display: none; /* Adjust the aspect ratio for smaller screens */
         }
         >#mail{
-            display: flex;
-            justify-content: space-between;
-            font-size: 20px;
-            font-family: sans-serif;
-            align-items: center;
+
         }
     }
 }

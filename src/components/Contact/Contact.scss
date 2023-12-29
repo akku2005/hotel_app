@@ -1,9 +1,9 @@
 @import '../../app.scss';
 
 #contact{
-  // background-color: aqua;
+  // margin-top: 10%;
   width: 100%;
-  height: auto;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   >#heading{
@@ -100,7 +100,7 @@
         }
 
         >p{
-          font-size: 20px;
+          font-size: 18px;
           align-items: center;
           display: flex;
           justify-content: center;

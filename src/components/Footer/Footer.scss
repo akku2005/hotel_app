@@ -59,6 +59,7 @@
 }
 @media (max-width: 726px) {
     .grid-container{
+        margin-top: 80%;
         line-height: 1;
         grid-template-columns: 1fr; /* Single column for screens <= 726px */
     }
