@@ -7,8 +7,8 @@ header{
     width: 100%;
     margin-top: -10pxs;
     height: 40px;
-    background: rgb(2,0,36);
-    background: linear-gradient(338deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,0.017331932773109293) 100%);
+    background: black;
+    // background: linear-gradient(338deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,0.017331932773109293) 100%);
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -19,14 +19,14 @@ header{
         text-decoration: none;
     }
     a{
-        color: black;
+        color: white;
         font-size: 18px;
         text-decoration: none;
     }
     #links{
         font-size: 20px;
         margin-right: 10%;
-        color: #0087ca;
+        color: #ffffff;
         cursor: pointer;
         display: flex;
         gap: 20px;
