@@ -47,12 +47,40 @@ header{
     #linkedin-icon:hover{
         color:white;
     }
-    @media (max-width: 768px) {
-        #links { 
-          display: none; /* Adjust the aspect ratio for smaller screens */
-        }
-        >#mail{
-
-        }
-    }
 }
+// Header.scss
+
+.main-heading {
+    // Your existing styles for the main heading
+  
+    @media screen and (max-width: 726px) {
+      #links{
+        display: none;
+      }
+    }
+  
+    #contact-info {
+      // Styles for contact information
+  
+      @media screen and (max-width: 726px) {
+        // Responsive styles for contact information at 726px or less
+      }
+  
+      p {
+        // Styles for paragraphs within contact information
+      }
+    }
+  
+    #social-links {
+      // Styles for social links
+  
+      @media screen and (max-width: 726px) {
+        // Responsive styles for social links at 726px or less
+      }
+  
+      i {
+        // Styles for icons within social links
+      }
+    }
+  }
+  

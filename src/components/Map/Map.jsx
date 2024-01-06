@@ -20,7 +20,7 @@ const Map = ({ latitude, longitude, uniqueProperty }) => {
   return (
     <>
     <div id='location'>
-    <div class="left-column">
+    <div className="left-column">
     <h2>Location</h2>
     <div id='locationframe'>
     <iframe
@@ -35,21 +35,54 @@ const Map = ({ latitude, longitude, uniqueProperty }) => {
     ></iframe>
     </div>
   </div>
-  <div class="right-column">
-  <div id='fom'>
-  <h1>Contact</h1>
+  <div className="right-column">
+  <div id="contact-form">
+      <h1>Contact</h1>
       <form onSubmit={handleSubmit}>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Your Name' required />
-          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Your Email' required />    
-          <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder='Subject' required />
-          <div id='text_area'>
-          <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Message' required></textarea>
-          </div>
-        <div id='btn'>
-        <button type="submit">Send Message</button>
+        <div className="form-group">
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            placeholder="Subject"
+            required
+          />
+        </div>
+        <div className="form-group" id="text_area">
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Message"
+            required
+          ></textarea>
+        </div>
+        <div className="form-group" id="btn">
+          <button type="submit">Send Message</button>
         </div>
       </form>
-  </div>
+    </div>
   </div>
   </div>
     </>

@@ -1,148 +1,92 @@
-@import '../../app.scss';
+// About.scss
 
 .about {
+  margin-bottom: 12px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    #heading {
-        display: block;
-        box-sizing: border-box;
-        text-align: center;
-        padding-bottom: 30px;
+  #heading {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 30px;
+    >p{
+      font-size: 17px;
+        color: gray;
+        font-weight: 600;
+      }
+      >.button-like{
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        padding: 8px 20px;
+        background-color: #e7f1fd;
+        color: #106eea;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 50px;
+    }
+    >h2{
+      padding: 20px;
+      font-size: 36px;
+      >span{
+        color: #106eea;
+    }
+  }
+  }
 
-        p {
-            margin-top: 5px;
+  #two-rows3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // Center items horizontally
+
+    img {
+      max-width: 80%; // Set maximum width to 80%
+      height: 70vh; // Set height to 80% of viewport height
+      border-radius: 15px;
+      margin: 0 10% 20px 10%; // 10% margin from left and right, 20px margin from the bottom
+
+      @media screen and (max-width: 726px) {
+        height: auto; // Set auto height for smaller screens
+        margin: 0px 10% 10px 10%; // Adjust styles for smaller screens
+        margin-bottom: -15px;
+      }
+    }
+    #list-items1 {
+      max-width: 80%; // Set maximum width to 80%
+      text-align: center; // Center text
+      h2 {
+       align-items: center;
+       justify-content: center;
+      }
+
+      ul {
+          color: rgb(119, 119, 119);
+          line-height: 40px;
+          justify-content: center;
+          align-items: center;
+          list-style-type: none;
+          padding: 0;
+
+        li {
+          margin-bottom: 25px;
         }
-
-        h2 {
-            margin: 15px 0 0 0;
-            font-size: 32px;
-            font-weight: 700;
-            box-sizing: border-box;
-            display: block;
-            text-align: center;
-
-            span {
-                color: #106eea;
-            }
-        }
-
-        .button-like {
-            font-size: 13px;
-            letter-spacing: 1px;
-            font-weight: 700;
-            padding: 8px 20px;
-            background-color: #e7f1fd;
-            color: #106eea;
-            display: inline-block;
-            text-transform: uppercase;
-            border-radius: 50px;
-        }
+      }
     }
 
-    #two-rows3 {
-        margin: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    @media screen and (min-width: 727px) {
+      // Adjust styles for screens greater than 726px
+      flex-direction: row;
+      align-items: center;
 
-        img {
-            filter: drop-shadow(-10px -10px 10px rgb(146, 141, 141));
-            margin-left: 10%;
-            max-width: 70%;
-            height: 80%;
-            border-radius: 8px;
-        }
-
-        #list-items1 {
-            padding: 10px;
-
-            h2 {
-                width: 85%;
-            }
-
-            ul {
-                color: rgb(119, 119, 119);
-                line-height: 40px;
-                justify-content: center;
-                align-items: center;
-                list-style-type: none;
-                padding: 0;
-
-                h2 {
-                    padding: 20px;
-                    font-size: 20px;
-                }
-
-                span {
-                    color: #106eea;
-                }
-
-                li {
-                    font-size: 20px;
-                    margin: 10px;
-                }
-            }
-        }
-
-        @media (max-width: 726px) {
-            grid-template-columns: 1fr; /* Change to a single column */
-            margin: 40px; /* Adjust margin for smaller screens */
-            img {
-                // margin-left: 0; /* Remove left margin for images */
-                max-width: 80%; /* Make images take full width */
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                height: auto; /* Maintain aspect ratio */
-            }
-
-            #list-items1 {
-                max-height: 400px;
-                h2 {
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    width: 100%; /* Make h2 take full width */
-                }
-                ul {
-                    h2 {
-                        font-size: 20px;
-                        padding: 20px; /* Adjust padding for smaller screens */
-                    }
-                    >span{
-                        color: #106eea;
-                    }
-                    
-                }
-            }
-        }
+      img {
+        margin: 0 10% 0 0; // 10% margin from right, 0 margin from left and bottom
+      }
     }
+  }
 }
-@media (max-width: 726px) {
-    #two-rows3{
-        // // display: none;
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr;
-        // grid-column: span 2;
-        // // grid-column-end: ;
-        display: flex;
-        flex-direction: row;
-
-    >img{
-            filter: drop-shadow(-10px -10px 10px rgb(146, 141, 141));
-            margin-left: 10%;
-            max-width: 70%;
-            height: 80%;
-            border-radius: 8px;
-        }
-        >#list-items1{
-            padding: 10px;
-            >h2{
-                width:85%;
-            }
-}
-
-    }}

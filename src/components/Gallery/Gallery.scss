@@ -1,8 +1,6 @@
 @import '../../app.scss';
 
 #gallery{
-  margin-top: 10%;
-    // background-color: aqua;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -119,17 +117,6 @@
   }
   #gallery{
     overflow: hidden;
-        margin-top: 143%;
+        margin-top: 155%;
       }
 }
-@media only screen and (max-width: 45){
-  #gallery{
-    overflow: hidden;
-    margin-top: 10%;
-  }
-}
-// @media(min-width: 300px){
-//   #gallery{
-//     margin-top: 110%;
-//   }
-// }
